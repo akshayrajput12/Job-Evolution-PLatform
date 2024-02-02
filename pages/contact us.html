@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="/page style/contact us.css">
+</head>
+<body>
+    <!-- nav bar same for all-->
+    <header>
+        <nav>
+            <div class="logo">
+
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><a href="/pages/home.html">Home</a></li>
+                    <li>Events</li>
+                    <li>About</li>
+                    <li><a href="/pages/contact us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="profile">
+                <img src="/profile.png" alt="" id="profile-img" class="profile-img" onmouseover="showSubmenu()" onmouseout="hideSubmenu()">
+                <ul id="submenu" class="submenu">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Office</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body">
+        <div class="container">
+            <h2>CONTACT US</h2>
+            <div class="deatil">
+                <input type="email" id="email"required>
+                <label class="email" for="">Email</label>
+                <input type="number" id="mobno" maxlength="10" minlength="10"  required>
+                <label class="mobno" for="">Mobile Number</label>
+            </div>
+            <div class="sub">
+                <input type="text" class="sub" id="sub" required>
+                <label for="">Subject</label>
+            </div>
+            <div class="textarea">
+                <textarea name="" id="textarea" cols="70" rows="10" placeholder="Write Something"></textarea>
+            </div>
+            <input type="button" class="submit" value="Submit">
+        </div>
+    </div>
+    <!-- nav end here-->
+</body>
+<script src="/javascript pages/script.js"></script>
+</html>

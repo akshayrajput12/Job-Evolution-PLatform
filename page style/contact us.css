@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Style for navbar  same for all mostly*/
+header{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.pages{
+    width: 60%;
+}
+.pages ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.pages ul li{
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgb(206, 104, 20);
+}
+
+
+.pages ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.pages ul li:hover{
+    scale: 1.1;
+    transition: .5s;
+}
+
+.profile{
+    width: 10%;
+    height: 50px;
+}
+.profile-img{
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.profile-img:hover{
+    scale: 1.1;
+    transition: .5s;
+}
+
+.profile .submenu{
+    list-style: none;
+    visibility: hidden;
+}
+.profile .submenu li a{
+    cursor: pointer;
+    font-size: 1 rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgb(206, 104, 20);
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(/wallpaperflare.com_wallpaper.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* till here most part is same*/
+
+/* style for contact form and background*/
+.body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -20%;
+}
+
+.container
+{
+    top: -20%;
+    width: 500px;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+
+h2
+{
+    color: #ffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+
+.deatil{
+    width:90%;
+}
+
+.deatil input{
+    
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 10px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: 2px;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    border-bottom: 3px solid #ffff;
+}
+.deatil label
+{
+    position: relative;
+    top: -22%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+input:focus ~ .email,
+input:valid ~ .email
+{
+    visibility: hidden;
+}
+
+input:focus ~ .mobno,
+input:valid ~ .mobno
+{
+    visibility: hidden;
+}
+
+
+.sub{
+    width: 94%;
+}
+
+.sub input{
+    
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 10px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    border-bottom: 3px solid #ffff;
+}
+ .sub label{
+    position: relative;
+    top: -30%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #fff;
+    transition: 0.5s;
+ }
+
+ 
+input:focus ~ label,
+input:valid ~ label
+{
+   visibility: hidden;
+}
+
+
+ 
+textarea{
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 10px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    border-radius:5px;
+    outline: none;
+    color: #fff;
+    height: 150px;
+    border-radius: 10px;
+    border-bottom: 3px solid #ffff;
+
+}
+
+::placeholder{
+    font-size: 1em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.submit{
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.submit:hover{
+    background-color: aqua;
+    scale: 1.1;
+    transition: .8s;
+}

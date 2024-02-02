@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designed login page</title>
+    <link rel="stylesheet" href="/page style/style.css">
+    <script src="https://kit.fontawesome.com/8f8ae9d62e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- nav bar same for all-->
+    <header>
+        <nav>
+            <div class="logo">
+
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><a href="/pages/home.html">Home</a></li>
+                    <li>Events</li>
+                    <li>About</li>
+                    <li><a href="/pages/contact us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="profile">
+                <img src="/profile.png" alt="" id="profile-img" class="profile-img" onmouseover="showSubmenu()">
+                <ul id="submenu" class="submenu"  onmouseout="hideSubmenu()">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Office</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- nav end here-->
+
+    <!-- body major part of login page-->
+    <div class="body">
+    <div class="container">
+        <h2>login page</h2>
+        <form action="">
+            <div class="form-group">
+                <input type="email" name="" id="username">
+                <label for="">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <input  type="password" name="" id="password">
+                <label for="">Password</label>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <p><input type="checkbox" name="" id="">Remember Me <a href="#">Forgot Password</a></p>
+
+
+            <input id="btn" type="button" value="Login" onclick="login() "keypress="login()">
+
+            <p>Don't have account? <a href="#">Register</a></p>
+        </form>
+    </div>
+</div>
+
+
+
+
+    <script src="/javascript pages/script.js"></script>
+</body>
+</html>
