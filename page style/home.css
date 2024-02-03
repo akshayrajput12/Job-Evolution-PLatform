@@ -71,7 +71,7 @@ nav{
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background: url(/wallpaperflare.com_wallpaper.jpg)no-repeat;
     background-position: center;
     background-size: cover;
@@ -193,6 +193,11 @@ body{
     body{
         height: auto;
     }
+    .outer-circle{
+        position: relative;
+        top: -50px;
+        z-index: -5;
+    }
   }
 
 
@@ -206,6 +211,11 @@ body{
     }
     body{
         height: auto;
+    }
+    .outer-circle{
+        position: relative;
+        top: -50px;
+        z-index: -5;
     }
   }
 
@@ -221,7 +231,44 @@ body{
     body{
         height: auto;
     }
+    .outer-circle{
+        position: relative;
+        top: -5px;
+        z-index: -5;
+    }
+    .watch:hover{
+        z-index: 4;
+        scale: 1.2;
+        cursor: pointer;
+    
+        .outer-circle:hover{
+            z-index: 4;
+        scale: 1.2;
+        cursor: pointer;
+        }
+      }
+    
   }
+
+
+
+  @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .outer-circle{
+        position: relative;
+        top: -250px;
+        z-index: -5;
+    }
+    .outer-circle:hover{
+        scale: 1.2;
+        z-index: 4;
+    }
+    .leave{
+        margin-left: 25px;
+    }
+  }
+ 
 
 
 
@@ -235,6 +282,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 80%;
+    flex-wrap: wrap;
 }
 
 
@@ -402,6 +450,12 @@ input:checked + .button::before{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.outer-circle:hover{
+    scale: 1.2;
+    z-index: 4;
+    cursor: pointer;
 }
 
 

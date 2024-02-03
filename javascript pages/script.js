@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Lunch break checkbox element
   const lunchBreakCheckbox = document.getElementById('lunch-time');
+  const fullDayCheckbox=document.getElementById('full-day-leave');
+  const ServiceCheckbox=document.getElementById('Service-not-avalaible');
 
   // Function to update the stopwatch display
   function updateStopwatch() {
@@ -75,18 +77,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Format the time
-    const dayString = (days < 10 ? '0 :' : ' : ') + days;
+    const dayString = (days < 10 ? '0 : ' : ' : ') + days;
     const hourString = (hours < 10 ? '0 : ' : ' : ') + hours;
     const minuteString = (minutes < 10 ? '0 : ' : ' : ') + minutes;
     const secString = (seconds < 10 ? '0 : ' : ' : ') + seconds;
-    const msecString = (milliseconds < 10 ? '0 : ' : ' : ') + milliseconds;
 
     // Update the stopwatch display
     dayElement.textContent = dayString;
     hourElement.textContent = hourString;
     minuteElement.textContent = minuteString;
     secElement.textContent = secString;
-    msecElement.textContent = msecString;
   }
 
   // Function to start the stopwatch
