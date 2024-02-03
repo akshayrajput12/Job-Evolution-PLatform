@@ -74,7 +74,7 @@ body{
     background-size: cover;
     overflow-x: hidden;
     overflow-y: hidden;
-    cursor: url('/curser/icons8-cursor-64.png') ,auto;
+    cursor: pointer;
 }
 /* till here most part is same*/
 
@@ -125,7 +125,11 @@ h2:hover{
     border-bottom: 3px solid #ffff;
 }
 #username{
-    cursor: url('/curser/icons8-email-open-64.png') ,auto;
+    cursor: pointer;
+}
+
+#password{
+    cursor: pointer;
 }
 
 .form-group input

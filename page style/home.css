@@ -299,3 +299,141 @@ body{
     color: aqua;
     scale: 1.2;
 }
+/*button styling*/
+
+.citeria{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.c3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button{
+    background-color: #fff;
+    width: 60px;
+    height: 35px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border:2px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    text-shadow: #fff;
+}
+
+.button::before{
+    position: absolute;
+    right: 28px;
+    content: '';
+    background-color: aqua;
+    width: 31px;
+    height: 31px;
+    border-radius: 200px;
+    margin-top: 1px;
+    transition: .2s;
+}
+
+input:checked  + .button{
+    background-color: #20096dd3;
+}
+
+input:checked + .button::before{
+    transform: translateX(28px);
+}
+
+.c3 input{
+    display: none;
+}
+
+.reason{
+    width: 50px;
+}
+
+.reason:hover{
+    scale: 1.1;
+    z-index: 3;
+}
+
+.c2 p{
+    text-align: center;
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    top: 20px;
+}
+
+.c2 p:hover{
+    color: aqua;
+    scale: 1.1;
+    text-decoration: underline;
+}
+
+
+/*stopwatch styling*/
+
+
+.watch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.outer-circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(20, 19, 19, 0.529);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(111, 110, 110, 0.581);
+    border:2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inner-circle{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.279);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border:2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.laps{
+    height: 300px;
+    overflow: auto;
+}
+
+.text{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.sec{
+    font-size: 1.7rem;
+}
+.msec{
+    font-size: 1.2em;
+    top: -5px;
+    position: relative;
+}
